@@ -6,4 +6,3 @@
     % ruby extconf.rb
     % make
     % ruby test.rb
-
