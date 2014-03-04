@@ -1,3 +1,4 @@
 require_relative 'number'
 
-puts Number.add 2, 3
+n = Number.new
+puts n.add 2, 3

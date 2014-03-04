@@ -13,7 +13,7 @@ VALUE wrap_add(self, aa, bb)
 }
 
 void Init_number(){
-  VALUE module;
-  module = rb_define_module("Number");
-  rb_define_module_function(module, "add", wrap_add, 2);
+  VALUE number_class;
+  number_class = rb_define_class("Number", rb_cObject);
+  rb_define_method(number_class, "add", wrap_add, 2);
 }
